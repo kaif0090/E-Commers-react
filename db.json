@@ -27,6 +27,13 @@
       "age": "45",
       "email": "kingqadri04@gmail.com",
       "role": "user"
+    },
+    {
+      "id": "d43e",
+      "name": "kaif",
+      "age": "45",
+      "email": "kingqadri04@gmail.com",
+      "role": "user"
     }
   ],
   "products": [

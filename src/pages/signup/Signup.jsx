@@ -37,7 +37,7 @@ export default function Signup() {
         style={{
           height: "100vh",
           position: "absolute",
-          marginTop: "-75px",
+          marginTop: "-95px",
 
           width: "100%",
         }} className="main"
