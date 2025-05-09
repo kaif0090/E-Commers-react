@@ -1,0 +1,429 @@
+{
+  "user": [
+    {
+      "id": "df41",
+      "name": "kaif",
+      "age": "45",
+      "email": "kingqadri04@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "03ff",
+      "name": "kaif ali khan",
+      "age": "45",
+      "email": "kingqadri04@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "cf47",
+      "name": "kaif ali khan",
+      "age": "23",
+      "email": "kingqadri04@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "07f1",
+      "name": "kaif",
+      "age": "45",
+      "email": "kingqadri04@gmail.com",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "p100",
+      "name": "OnePlus Nord 4",
+      "img": "https://m.media-amazon.com/images/I/61amb0CfMGL._SX679_.jpg",
+      "price": "45000",
+      "description": "OnePlus Nord 4 12GB RAM, 256GB Storage",
+      "category": "phone",
+      "brand": "OnePlus",
+      "rating": 4.5,
+      "stock": 15,
+      "color": "Gray",
+      "features": [
+        "AMOLED Display",
+        "65W SuperVOOC Charging",
+        "5G Support",
+        "Snapdragon 8 Gen 2"
+      ],
+      "specs": {
+        "display": "6.43-inch AMOLED",
+        "battery": "4500mAh",
+        "camera": "64MP Triple Camera",
+        "processor": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "id": "p101",
+      "name": "iPhone 14 Pro Max",
+      "img": "https://m.media-amazon.com/images/I/61nzPMNY8zL._SX679_.jpg",
+      "price": "139999",
+      "description": "Apple iPhone 14 Pro Max 256GB ",
+      "category": "phone",
+      "brand": "Apple",
+      "rating": 4.8,
+      "stock": 10,
+      "color": "Deep Purple",
+      "features": [
+        "Dynamic Island",
+        "A16 Bionic Chip",
+        "48MP Main Camera",
+        "Always-On Display"
+      ],
+      "specs": {
+        "display": "6.7-inch Super Retina XDR",
+        "battery": "4323mAh",
+        "camera": "48MP + 12MP Dual",
+        "processor": "A16 Bionic"
+      }
+    },
+    {
+      "id": "8408",
+      "name": "Samsung S25 Ultra",
+      "img": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/x/3/-original-imah8pdnxdwzazyy.jpeg?q=70&crop=false",
+      "price": "1,65,999",
+      "description": "SAMSUNG Galaxy S25 Ultra 5G ",
+      "category": "mobile",
+      "brand": "Samsung",
+      "rating": 4.5,
+      "stock": 11,
+      "color": "Silverblue",
+      "features": [
+        "17.53 cm (6.9 inch) Quad HD+ Display"
+      ],
+      "specs": {
+        "display": "17.53 cm (6.9 inch) Quad HD+ Display",
+        "battery": "5000 mAh Battery",
+        "processor": "8 Elite for Galaxy Processor",
+        "camera": "200MP + 50MP + 50MP + 10MP",
+        "ram": "12 GB RAM ",
+        "storage": "1024 GB ROM"
+      }
+    }
+  ],
+  "products2": [
+    {
+      "id": "m200",
+      "name": "Men's Formal Shirt",
+      "img": "https://imagescdn.louisphilippe.com/img/app/product/9/962928-17224804.jpg?auto=format&w=390",
+      "price": "1899",
+      "description": "Cotton white formal shirt for men",
+      "category": "men",
+      "brand": "Raymond",
+      "rating": 4.3,
+      "stock": 25,
+      "color": "White",
+      "size": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "100% Cotton",
+      "fit": "Slim Fit"
+    },
+    {
+      "id": "w201",
+      "name": "Women's Ethnic Kurta",
+      "img": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23546636/2023/12/15/5f1a81b9-1125-4e1e-9b01-5b8bbf57c34c1702619693301-AAnouk-Women-Ethnic-Motifs-Printed-Regular-Kurti-With-Sharar-11.jpg",
+      "price": "1399",
+      "description": "Printed straight kurta with 3/4 sleeves",
+      "category": "women",
+      "brand": "Biba",
+      "rating": 4.6,
+      "stock": 30,
+      "color": "Mustard",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Rayon",
+      "fit": "Regular Fit"
+    },
+    {
+      "id": "2ee5",
+      "name": "womens shirt",
+      "img": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/v/y/s/xxl-4868-70-funday-fashion-original-imagm5zcgkmgjkdq.jpeg?q=70",
+      "price": "800",
+      "description": "Women Boxy Fit Solid Casual Shirt",
+      "category": "Cloths",
+      "brand": "zara",
+      "rating": 4.3,
+      "stock": 6,
+      "color": "pitch green",
+      "features": [
+        ""
+      ],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Rayon",
+      "fit": "Regular Fit"
+    }
+  ],
+  "laptops": [
+    {
+      "id": "l300",
+      "name": "Dell Inspiron 15",
+      "img": "https://rukminim2.flixcart.com/image/850/1000/xif0q/computer/j/b/y/-original-imagzyfzmvhbwjdp.jpeg?q=90&crop=false",
+      "price": "58999",
+      "description": "Dell Inspiron 15 Laptop with Intel i5 12th Gen",
+      "category": "laptop",
+      "brand": "Dell",
+      "rating": 4.4,
+      "stock": 20,
+      "color": "Silver",
+      "features": [
+        "FHD Display",
+        "Backlit Keyboard",
+        "Wi-Fi 6",
+        "Windows 11"
+      ],
+      "specs": {
+        "display": "15.6-inch FHD",
+        "battery": "3-cell 41WHr",
+        "processor": "Intel i5 12th Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": "l301",
+      "name": "MacBook Air M2",
+      "img": "https://fdn.gsmarena.com/imgroot/news/23/06/apple-macbook-air-15/-1200/gsmarena_002.jpg",
+      "price": "114999",
+      "description": "Apple MacBook Air with M2 chip, 8GB RAM, 256GB SSD",
+      "category": "laptop",
+      "brand": "Apple",
+      "rating": 4.9,
+      "stock": 12,
+      "color": "Midnight",
+      "features": [
+        "Liquid Retina Display",
+        "M2 Chip",
+        "Fanless Design",
+        "macOS Ventura"
+      ],
+      "specs": {
+        "display": "13.6-inch Liquid Retina",
+        "battery": "18 Hours",
+        "processor": "Apple M2",
+        "ram": "8GB",
+        "storage": "256GB SSD"
+      }
+    },
+    {
+      "id": "l302",
+      "name": "Dell XPS 13 Plus",
+      "img": "https://d154tzc5g79pmr.cloudfront.net/media/catalog/product/cache/74ae05ef3745aec30d7f5a287debd7f5/x/s/xs9320nt-xnb-shot-5-1-sl.jpg",
+      "price": "124999",
+      "description": "Dell XPS 13 Plus with 12th Gen Intel Core i7, 16GB RAM, 512GB SSD",
+      "category": "laptop",
+      "brand": "Dell",
+      "rating": 4.7,
+      "stock": 8,
+      "color": "Platinum",
+      "features": [
+        "InfinityEdge Display",
+        "Intel Core i7",
+        "Touch Bar",
+        "Windows 11"
+      ],
+      "specs": {
+        "display": "13.4-inch UHD+",
+        "battery": "14 Hours",
+        "processor": "Intel Core i7-1260P",
+        "ram": "16GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": "l303",
+      "name": "HP Spectre x360",
+      "img": "https://img-cdn.tnwcdn.com/image?fit=1200%2C675&height=675&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FHP-Spectre-x360-14-1-of-7.jpg&signature=be2373b43e1088c3457ffd4f53fd987a",
+      "price": "102999",
+      "description": "HP Spectre x360 Convertible with Intel Evo, 16GB RAM, 512GB SSD",
+      "category": "laptop",
+      "brand": "HP",
+      "rating": 4.6,
+      "stock": 15,
+      "color": "Nightfall Black",
+      "features": [
+        "Convertible Design",
+        "Touchscreen",
+        "Bang & Olufsen Audio",
+        "Windows 11 Home"
+      ],
+      "specs": {
+        "display": "13.5-inch 3:2 OLED",
+        "battery": "17 Hours",
+        "processor": "Intel Core i7-1255U",
+        "ram": "16GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": "l304",
+      "name": "Lenovo Yoga Slim 7i",
+      "img": "https://rukminim2.flixcart.com/image/850/1000/xif0q/computer/t/j/o/-original-imahyyhwg9zpmg8a.jpeg?q=90&crop=false",
+      "price": "89999",
+      "description": "Lenovo Yoga Slim 7i with Intel Core i5, 8GB RAM, 512GB SSD",
+      "category": "laptop",
+      "brand": "Lenovo",
+      "rating": 4.5,
+      "stock": 20,
+      "color": "Slate Grey",
+      "features": [
+        "AI-Powered Battery Optimization",
+        "Dolby Vision",
+        "Slim & Lightweight",
+        "Windows 11"
+      ],
+      "specs": {
+        "display": "14-inch FHD IPS",
+        "battery": "15 Hours",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": "l305",
+      "name": "ASUS ROG Zephyrus G14",
+      "img": "https://m.media-amazon.com/images/I/71rbEY3i5wL.jpg",
+      "price": "139999",
+      "description": "ASUS ROG Zephyrus G14 Gaming Laptop, Ryzen 9, RTX 3060, 16GB RAM",
+      "category": "laptop",
+      "brand": "ASUS",
+      "rating": 4.8,
+      "stock": 10,
+      "color": "Moonlight White",
+      "features": [
+        "Gaming Performance",
+        "High Refresh Rate",
+        "Backlit Keyboard",
+        "Windows 11 Pro"
+      ],
+      "specs": {
+        "display": "14-inch QHD 120Hz",
+        "battery": "10 Hours",
+        "processor": "AMD Ryzen 9 5900HS",
+        "ram": "16GB",
+        "storage": "1TB SSD"
+      }
+    }
+  ],
+  "cosmetics": [
+    {
+      "id": "c402",
+      "name": "L'Oréal Paris Kajal Magique",
+      "img": "https://images-static.nykaa.com/media/catalog/product/d/8/d8af9fc8901526913824_2.jpg",
+      "price": "275",
+      "description": "Bold Black Waterproof Kajal with Vitamin E",
+      "category": "cosmetics",
+      "brand": "L'Oréal Paris",
+      "rating": 4.3,
+      "stock": 40,
+      "shade": "Black",
+      "waterproof": true,
+      "type": "Kajal"
+    },
+    {
+      "id": "c403",
+      "name": "Colorbar Nail Lacquer",
+      "img": "https://www.colorbarcosmetics.com/media/catalog/product/v/a/vanilla1_lft6dk5o1nbkkcdv.jpg",
+      "price": "199",
+      "description": "Long-lasting Nail Polish - Royal Blue",
+      "category": "cosmetics",
+      "brand": "Colorbar",
+      "rating": 4.1,
+      "stock": 30,
+      "shade": "Royal Blue",
+      "finish": "Glossy",
+      "volume": "12ml"
+    },
+    {
+      "id": "c404",
+      "name": "Mamaearth Ubtan Face Wash",
+      "img": "https://m.media-amazon.com/images/I/612kPONWlwL.jpg",
+      "price": "249",
+      "description": "Face wash with Turmeric & Saffron for ",
+      "category": "cosmetics",
+      "brand": "Mamaearth",
+      "rating": 4.5,
+      "stock": 35,
+      "skinType": "All Skin Types",
+      "scent": "Natural",
+      "volume": "100ml"
+    },
+    {
+      "id": "c405",
+      "name": "NIVEA Soft Light Moisturiser",
+      "img": "https://images-static.nykaa.com/media/catalog/product/e/6/e6beb184005808679829_2.jpg?tr=w-500",
+      "price": "185",
+      "description": "Non-greasy cream for face, hands & body",
+      "category": "cosmetics",
+      "brand": "NIVEA",
+      "rating": 4.6,
+      "stock": 45,
+      "skinType": "Normal Skin",
+      "volume": "100ml",
+      "type": "Moisturiser"
+    },
+    {
+      "id": "c406",
+      "name": "Maybelline Colossal Mascara",
+      "img": "https://m.media-amazon.com/images/I/61QssTVrbLL.jpg",
+      "price": "399",
+      "description": "Volum Express Waterproof Mascara - Black",
+      "category": "cosmetics",
+      "brand": "Maybelline",
+      "rating": 4.4,
+      "stock": 20,
+      "shade": "Black",
+      "waterproof": true,
+      "type": "Mascara"
+    }
+  ],
+  "cart": [
+    {
+      "id": "w201",
+      "name": "Women's Ethnic Kurta",
+      "img": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23546636/2023/12/15/5f1a81b9-1125-4e1e-9b01-5b8bbf57c34c1702619693301-AAnouk-Women-Ethnic-Motifs-Printed-Regular-Kurti-With-Sharar-11.jpg",
+      "price": "1399",
+      "description": "Printed straight kurta with 3/4 sleeves",
+      "category": "women",
+      "brand": "Biba",
+      "rating": 4.6,
+      "stock": 30,
+      "color": "Mustard",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Rayon",
+      "fit": "Regular Fit"
+    },
+    {
+      "id": "c403",
+      "name": "Colorbar Nail Lacquer",
+      "img": "https://www.colorbarcosmetics.com/media/catalog/product/v/a/vanilla1_lft6dk5o1nbkkcdv.jpg",
+      "price": "199",
+      "description": "Long-lasting Nail Polish - Royal Blue",
+      "category": "cosmetics",
+      "brand": "Colorbar",
+      "rating": 4.1,
+      "stock": 30,
+      "shade": "Royal Blue",
+      "finish": "Glossy",
+      "volume": "12ml"
+    }
+  ]
+}

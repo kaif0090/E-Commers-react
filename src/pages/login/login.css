@@ -1,0 +1,14 @@
+.mainlogin{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/732/516/non_2x/e-commerce-online-shopping-digital-marketing-internet-business-technology-concept-on-virtual-screen-free-photo.jpg");
+    color: rgb(255, 255, 255);
+}
+.login-form{
+    /* From https://css.glass */
+background: rgba(0, 0, 0, 0.719);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.6px);
+-webkit-backdrop-filter: blur(7.6px);
+border: 1px solid rgba(255, 255, 255, 0.14);
+padding: 50px;
+}
