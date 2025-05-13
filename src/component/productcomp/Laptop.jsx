@@ -40,7 +40,7 @@ export default function Laptop() {
   }
 
   return (
-    <div className="container my-3 bg-light p-4">
+    <div className="container-fluid my-3 bg-light p-4">
       <h1 className="text-center"> Laptops </h1>
       <div className="row">
         {products.map((item, index) => (

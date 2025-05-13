@@ -1,38 +1,17 @@
 {
   "user": [
     {
-      "id": "df41",
+      "id": "5d88",
       "name": "kaif",
-      "age": "45",
+      "password": "password",
       "email": "kingqadri04@gmail.com",
       "role": "user"
     },
     {
-      "id": "03ff",
-      "name": "kaif ali khan",
-      "age": "45",
-      "email": "kingqadri04@gmail.com",
-      "role": "user"
-    },
-    {
-      "id": "cf47",
-      "name": "kaif ali khan",
-      "age": "23",
-      "email": "kingqadri04@gmail.com",
-      "role": "user"
-    },
-    {
-      "id": "07f1",
-      "name": "kaif",
-      "age": "45",
-      "email": "kingqadri04@gmail.com",
-      "role": "user"
-    },
-    {
-      "id": "d43e",
-      "name": "kaif",
-      "age": "45",
-      "email": "kingqadri04@gmail.com",
+      "id": "7f75",
+      "name": "alshifa",
+      "password": "1234564865413",
+      "email": "kaif@gmail.com",
       "role": "user"
     }
   ],
@@ -59,6 +38,150 @@
         "battery": "4500mAh",
         "camera": "64MP Triple Camera",
         "processor": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "id": "p101",
+      "name": "iPhone 14",
+      "img": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",
+      "price": "69999",
+      "description": "Apple iPhone 14 128GB - Blue",
+      "category": "phone",
+      "brand": "Apple",
+      "rating": 4.7,
+      "stock": 10,
+      "color": "Blue",
+      "features": [
+        "Super Retina XDR Display",
+        "A15 Bionic Chip",
+        "iOS 16",
+        "Dual-Camera System"
+      ],
+      "specs": {
+        "display": "6.1-inch OLED",
+        "battery": "3279mAh",
+        "camera": "12MP + 12MP",
+        "processor": "A15 Bionic"
+      }
+    },
+    {
+      "id": "p102",
+      "name": "Samsung Galaxy S23",
+      "img": "https://m.media-amazon.com/images/I/61RZDb2mQxL._SX679_.jpg",
+      "price": "74999",
+      "description": "Samsung Galaxy S23 8GB RAM, 256GB Storage",
+      "category": "phone",
+      "brand": "Samsung",
+      "rating": 4.6,
+      "stock": 12,
+      "color": "Green",
+      "features": [
+        "120Hz AMOLED Display",
+        "Snapdragon 8 Gen 2",
+        "Nightography Camera",
+        "Wireless Charging"
+      ],
+      "specs": {
+        "display": "6.1-inch Dynamic AMOLED",
+        "battery": "3900mAh",
+        "camera": "50MP + 12MP + 10MP",
+        "processor": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "id": "p103",
+      "name": "Realme Narzo 60 Pro",
+      "img": "https://cdn.beebom.com/mobile/2023/11/Untitled-design-71.png",
+      "price": "23999",
+      "description": "Realme Narzo 60 Pro 12GB RAM, 256GB ROM",
+      "category": "phone",
+      "brand": "Realme",
+      "rating": 4.3,
+      "stock": 18,
+      "color": "Mars Orange",
+      "features": [
+        "Curved AMOLED Display",
+        "100MP OIS Camera",
+        "Dimensity 7050",
+        "VC Cooling System"
+      ],
+      "specs": {
+        "display": "6.7-inch FHD+ AMOLED",
+        "battery": "5000mAh",
+        "camera": "100MP Main",
+        "processor": "MediaTek Dimensity 7050"
+      }
+    },
+    {
+      "id": "p104",
+      "name": "Redmi Note 12 Pro",
+      "img": "https://i02.appmifile.com/264_operator_in/05/01/2023/bdac42eb37ee2a1fcfa72e46af623c13.jpg",
+      "price": "24999",
+      "description": "Redmi Note 12 Pro 5G 8GB RAM, 128GB Storage",
+      "category": "phone",
+      "brand": "Redmi",
+      "rating": 4.4,
+      "stock": 20,
+      "color": "Onyx Black",
+      "features": [
+        "OLED Display",
+        "67W Turbo Charge",
+        "OIS Camera",
+        "Dolby Vision & Atmos"
+      ],
+      "specs": {
+        "display": "6.67-inch AMOLED",
+        "battery": "5000mAh",
+        "camera": "50MP Sony IMX766",
+        "processor": "MediaTek Dimensity 1080"
+      }
+    },
+    {
+      "id": "p105",
+      "name": "iQOO Neo 7 Pro",
+      "img": "https://m.media-amazon.com/images/I/61IiuWQcVjL._SX679_.jpg",
+      "price": "34999",
+      "description": "iQOO Neo 7 Pro 8GB RAM, 128GB Storage",
+      "category": "phone",
+      "brand": "iQOO",
+      "rating": 4.5,
+      "stock": 14,
+      "color": "Fearless Flame",
+      "features": [
+        "120W FlashCharge",
+        "Independent Gaming Chip",
+        "Snapdragon 8+ Gen 1",
+        "Gaming Touch Enhancement"
+      ],
+      "specs": {
+        "display": "6.78-inch AMOLED",
+        "battery": "5000mAh",
+        "camera": "50MP + 8MP + 2MP",
+        "processor": "Snapdragon 8+ Gen 1"
+      }
+    },
+    {
+      "id": "p106",
+      "name": "Motorola Edge 40",
+      "img": "https://motorolain.vtexassets.com/arquivos/ids/158550/egde40_Viva-Magenta.png?v=638309911488700000",
+      "price": "29999",
+      "description": "Motorola Edge 40 8GB RAM, 256GB Storage",
+      "category": "phone",
+      "brand": "Motorola",
+      "rating": 4.2,
+      "stock": 17,
+      "color": "Eclipse Black",
+      "features": [
+        "144Hz pOLED Display",
+        "IP68 Water Resistant",
+        "68W Turbo Charging",
+        "Lightweight Design"
+      ],
+      "specs": {
+        "display": "6.55-inch pOLED",
+        "battery": "4400mAh",
+        "camera": "50MP OIS + 13MP Ultrawide",
+        "processor": "MediaTek Dimensity 8020"
       }
     },
     {
@@ -171,6 +294,132 @@
       ],
       "material": "Rayon",
       "fit": "Regular Fit"
+    },
+    {
+      "id": "2ee6",
+      "name": "Women's Casual Top",
+      "img": "https://5.imimg.com/data5/FX/MA/MY-13765940/casual-tops-for-women.jpg",
+      "price": "699",
+      "description": "Women Printed V-Neck Casual Top",
+      "category": "Cloths",
+      "brand": "Selvia",
+      "rating": 4.2,
+      "stock": 8,
+      "color": "Navy Blue",
+      "features": [],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Polyester",
+      "fit": "Slim Fit"
+    },
+    {
+      "id": "2ee7",
+      "name": "Women's Denim Jacket",
+      "img": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23247764/2023/5/17/082a9962-227b-4e77-9f0d-dec692f55a061684324764175SPYKARWomenBlueWashedCropDenimJacket1.jpg",
+      "price": "1499",
+      "description": "Women Full Sleeve Denim Jacket",
+      "category": "Cloths",
+      "brand": "DNMX",
+      "rating": 4.5,
+      "stock": 5,
+      "color": "Blue",
+      "features": [],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Denim",
+      "fit": "Slim Fit"
+    },
+    {
+      "id": "2ee8",
+      "name": "Women's Kurti",
+      "img": "https://m.media-amazon.com/images/I/61tyq4EnOpL._AC_UY1100_.jpg",
+      "price": "999",
+      "description": "Printed Anarkali Kurta with Ethnic Motifs",
+      "category": "Cloths",
+      "brand": "Mysha",
+      "rating": 4.4,
+      "stock": 10,
+      "color": "Maroon",
+      "features": [],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton Blend",
+      "fit": "Flared Fit"
+    },
+    {
+      "id": "2ee9",
+      "name": "Women's Palazzo Pants",
+      "img": "https://www.fabclub.co.in/wp-content/uploads/2021/12/FBPLZ0001_DKGN-2.jpg",
+      "price": "499",
+      "description": "Solid Bottle Green Palazzo Pants",
+      "category": "Cloths",
+      "brand": "Saraf",
+      "rating": 4,
+      "stock": 12,
+      "color": "Bottle Green",
+      "features": [],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton",
+      "fit": "Loose Fit"
+    },
+    {
+      "id": "2ee10",
+      "name": "Women's Ethnic Dress",
+      "img": "https://rukminim2.flixcart.com/image/850/1000/xif0q/dress/m/2/w/3xl-kf-1801-pk-kiana-original-imagtjkvcrtfwyyw.jpeg?q=90&crop=false",
+      "price": "1299",
+      "description": "Anarkali Dress with Dupatta Set",
+      "category": "Cloths",
+      "brand": "Sareehub",
+      "rating": 4.6,
+      "stock": 7,
+      "color": "Pink",
+      "features": [],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Rayon",
+      "fit": "Regular Fit"
+    },
+    {
+      "id": "2ee11",
+      "name": "Women's Leggings",
+      "img": "https://images-cdn.ubuy.co.in/6343243419a0bc441e00e7f4-traininggirl-mesh-leggings-for-women.jpg",
+      "price": "349",
+      "description": "Solid Cotton Blend Leggings",
+      "category": "Cloths",
+      "brand": "Majestic Legging",
+      "rating": 4.1,
+      "stock": 15,
+      "color": "Black",
+      "features": [],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton Blend",
+      "fit": "Skinny Fit"
     }
   ],
   "laptops": [
@@ -395,9 +644,71 @@
       "shade": "Black",
       "waterproof": true,
       "type": "Mascara"
+    },
+    {
+      "id": "3293",
+      "name": "lipstick",
+      "img": "https://m.media-amazon.com/images/I/51whWS0xHkL._AC_UF1000,1000_QL80_.jpg",
+      "price": "900",
+      "description": "matt lipstick",
+      "category": "cosmatic",
+      "brand": "mayble",
+      "rating": 4,
+      "stock": 7,
+      "color": "dark red",
+      "features": [
+        ""
+      ]
     }
   ],
   "cart": [
+    {
+      "id": "p101",
+      "name": "iPhone 14 Pro Max",
+      "img": "https://m.media-amazon.com/images/I/61nzPMNY8zL._SX679_.jpg",
+      "price": "139999",
+      "description": "Apple iPhone 14 Pro Max 256GB ",
+      "category": "phone",
+      "brand": "Apple",
+      "rating": 4.8,
+      "stock": 10,
+      "color": "Deep Purple",
+      "features": [
+        "Dynamic Island",
+        "A16 Bionic Chip",
+        "48MP Main Camera",
+        "Always-On Display"
+      ],
+      "specs": {
+        "display": "6.7-inch Super Retina XDR",
+        "battery": "4323mAh",
+        "camera": "48MP + 12MP Dual",
+        "processor": "A16 Bionic"
+      }
+    },
+    {
+      "id": "2ee5",
+      "name": "womens shirt",
+      "img": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/v/y/s/xxl-4868-70-funday-fashion-original-imagm5zcgkmgjkdq.jpeg?q=70",
+      "price": "800",
+      "description": "Women Boxy Fit Solid Casual Shirt",
+      "category": "Cloths",
+      "brand": "zara",
+      "rating": 4.3,
+      "stock": 6,
+      "color": "pitch green",
+      "features": [
+        ""
+      ],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Rayon",
+      "fit": "Regular Fit"
+    },
     {
       "id": "w201",
       "name": "Women's Ethnic Kurta",
@@ -417,20 +728,6 @@
       ],
       "material": "Rayon",
       "fit": "Regular Fit"
-    },
-    {
-      "id": "c403",
-      "name": "Colorbar Nail Lacquer",
-      "img": "https://www.colorbarcosmetics.com/media/catalog/product/v/a/vanilla1_lft6dk5o1nbkkcdv.jpg",
-      "price": "199",
-      "description": "Long-lasting Nail Polish - Royal Blue",
-      "category": "cosmetics",
-      "brand": "Colorbar",
-      "rating": 4.1,
-      "stock": 30,
-      "shade": "Royal Blue",
-      "finish": "Glossy",
-      "volume": "12ml"
     }
   ]
 }

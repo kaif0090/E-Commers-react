@@ -12,6 +12,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import LandingPage from "./pages/landingpage/LandingPage";
 import AddToCart from "./pages/add to cart/AddToCart";
 import ProductPhone from "./component/productcomp/ProductPhone";
+import Buynow from "./pages/buynow/Buynow";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const routs = createBrowserRouter([
@@ -54,6 +55,9 @@ const routs = createBrowserRouter([
     ,{
         path:"AddToCart",
         element:<AddToCart/>
+    },{
+        path:"Buynow",
+        element:<Buynow/>
     }
 ],
   },

@@ -43,7 +43,7 @@ export default function LandingPage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
-          className="button-group"
+          className="button-group"style={{marginTop:"-100px"}}
         >
           <div className="d-flex gap-5  justify-content-center">
             <button className="uiverse" onClick={() => navigate("/signup")}>

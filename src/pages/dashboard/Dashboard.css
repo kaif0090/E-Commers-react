@@ -1,6 +1,7 @@
 .maindash{
-    background-color: rgb(252, 193, 2);
-    margin-top: -5px;
+    /* background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-black-background-with-red-hexagonal-pattern-picture-image_1151718.jpg"); */
+    background-color: wheat;
+    margin-top: -100px;
     padding: 50px;
     width: 100%;
     height: 100%;
@@ -8,12 +9,11 @@
 .contain{
  width: 100%;
     border-top-right-radius: 50px;
+    height: 100%;
     padding: 50px;
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid wheat;
     border-bottom-left-radius: 50px;
-    box-shadow: 10px 10px 0.85rem black;
-}
-.contain:hover{
-    scale: 1.05;
-    transition: 1s
+    box-shadow: 10px 10px 0.85rem rgb(0, 0, 0);
 }

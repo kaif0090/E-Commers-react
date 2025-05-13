@@ -3,7 +3,7 @@ import { api } from "../../api";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { motion } from "framer-motion";
-import "./all.css"
+import "./all.css";
 export default function ProductPhone() {
   const [products, setProducts] = useState([]);
   const notify = () => toast("Product Added to Cart!");
@@ -25,7 +25,6 @@ export default function ProductPhone() {
   }
   async function handleAddToCart(product) {
     try {
-    
       const existing = await api.get(`/cart?id=${product.id}`);
       if (existing.data.length > 0) {
         alert("Product already in cart");
@@ -34,7 +33,7 @@ export default function ProductPhone() {
 
       const res = await api.post("/cart", product);
       if (res.status === 201) {
-      console.log("add to cart")
+        console.log("add to cart");
       }
     } catch (error) {
       console.error("Error adding to cart", error);
@@ -42,9 +41,8 @@ export default function ProductPhone() {
   }
   return (
     <>
-     
-      <div className="container my-3 bg-light p-4">
-         <h1 className="text-center my-4">Phones</h1>
+      <div className="container-fluid my-3 bg-light p-4" style={{}}>
+        <h1 className="text-center my-4">Phones</h1>
         <div className="row d-flex justify-content-start">
           {products.length > 0 &&
             products.map((element, index) => (
@@ -68,17 +66,19 @@ export default function ProductPhone() {
                     <h5 className="card-title">{element.price}</h5>
                     <p className="card-text">{element.description}</p>
                     <Link to={`/product/${element.id}`}>
-                      <button className="btn btn-warning w-100 mb-2">Buy Now</button>
+                      <button className="btn btn-warning w-100 mb-2">
+                        Buy Now
+                      </button>
                     </Link>
                     <button
-                  className="btn btn-danger w-100"
-                  onClick={() => {
-                    handleAddToCart(element);
-                    notify();
-                  }}
-                >
-                  Add to Cart
-                </button>
+                      className="btn btn-danger w-100"
+                      onClick={() => {
+                        handleAddToCart(element);
+                        notify();
+                      }}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </motion.div>

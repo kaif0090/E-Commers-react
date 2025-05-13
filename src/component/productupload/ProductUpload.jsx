@@ -1,4 +1,4 @@
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { api } from "../../api";
 import { useFormik } from "formik";
 import { useEffect, useState } from "react";
@@ -43,41 +43,41 @@ export default function ProductUpload() {
     }
   }
 
-  const { handleSubmit, handleChange, handleReset, values, setValues } = useFormik({
-    initialValues: {
-      name: "",
-      img: "",
-      price: "",
-      description: "",
-      category: "",
-      brand: "",
-      rating: "",
-      stock: "",
-      color: "",
-      features: "",
-      specs: {
-        display: "",
-        battery: "",
-        processor: "",
-        camera: "",
-        ram: "",
-        storage: "",
+  const { handleSubmit, handleChange, handleReset, values, setValues } =
+    useFormik({
+      initialValues: {
+        name: "",
+        img: "",
+        price: "",
+        description: "",
+        category: "",
+        brand: "",
+        rating: "",
+        stock: "",
+        color: "",
+        features: "",
+        specs: {
+          display: "",
+          battery: "",
+          processor: "",
+          camera: "",
+          ram: "",
+          storage: "",
+        },
       },
-    },
-    onSubmit: submitHandler,
-  });
+      onSubmit: submitHandler,
+    });
 
   async function submitHandler(values) {
     try {
       setLoading(true);
       const payload = {
         ...values,
-        features: values.features.split(",").map(f => f.trim()),
+        features: values.features.split(",").map((f) => f.trim()),
       };
       const response = await api.post(`/${selectedEndpoint}`, payload);
       console.log("Data Added", response.statusText);
       setLoading(false);
-     
     } catch (error) {
       console.log(error);
     }
@@ -87,24 +87,34 @@ export default function ProductUpload() {
   return (
     <>
       <h1 className="text-center">Upload Product</h1>
-      <div className="container bg-warning p-3">
+      <div className="container text-dark p-3">
         <form className="d-flex flex-column gap-3" onSubmit={handleSubmit}>
-        <div className="mb-3">
-  <label htmlFor="endpoint" className="form-label">Select Category:</label>
-  <select
-    id="endpoint"
-    value={selectedEndpoint}
-    onChange={(e) => setSelectedEndpoint(e.target.value)}
-    className="form-select"
-  >
-    <option value="products">Phones</option>
-    <option value="products2">Clothes</option>
-    <option value="laptops">Laptops</option>
-    <option value="cosmetics">Cosmetics</option>
-  </select>
-</div>
+          <div className="mb-3">
+            <label htmlFor="endpoint" className="form-label">
+              Select Category:
+            </label>
+            <select
+              id="endpoint"
+              value={selectedEndpoint}
+              onChange={(e) => setSelectedEndpoint(e.target.value)}
+              className="form-select"
+            >
+              <option value="products">Phones</option>
+              <option value="products2">Clothes</option>
+              <option value="laptops">Laptops</option>
+              <option value="cosmetics">Cosmetics</option>
+            </select>
+          </div>
           {/* Simple Fields */}
-          {["name", "img", "price", "description", "category", "brand", "color"].map((field) => (
+          {[
+            "name",
+            "img",
+            "price",
+            "description",
+            "category",
+            "brand",
+            "color",
+          ].map((field) => (
             <div key={field}>
               <label htmlFor={field} className="form-label">
                 {field}:
@@ -123,7 +133,9 @@ export default function ProductUpload() {
 
           {/* Rating */}
           <div>
-            <label htmlFor="rating" className="form-label">Rating:</label>
+            <label htmlFor="rating" className="form-label">
+              Rating:
+            </label>
             <input
               type="number"
               name="rating"
@@ -138,7 +150,9 @@ export default function ProductUpload() {
 
           {/* Stock */}
           <div>
-            <label htmlFor="stock" className="form-label">Stock:</label>
+            <label htmlFor="stock" className="form-label">
+              Stock:
+            </label>
             <input
               type="number"
               name="stock"
@@ -152,7 +166,9 @@ export default function ProductUpload() {
 
           {/* Features */}
           <div>
-            <label htmlFor="features" className="form-label">Features (comma separated):</label>
+            <label htmlFor="features" className="form-label">
+              Features (comma separated):
+            </label>
             <input
               type="text"
               name="features"
@@ -166,29 +182,31 @@ export default function ProductUpload() {
 
           {/* Specs */}
           <h5>Specifications</h5>
-          {["display", "battery", "processor", "camera", "ram", "storage"].map((spec) => (
-            <div key={spec}>
-              <label htmlFor={`specs.${spec}`} className="form-label">
-                {spec}:
-              </label>
-              <input
-                type="text"
-                name={`specs.${spec}`}
-                value={values.specs[spec] || ""}
-                onChange={(e) =>
-                  setValues((prev) => ({
-                    ...prev,
-                    specs: {
-                      ...prev.specs,
-                      [spec]: e.target.value,
-                    },
-                  }))
-                }
-                className="form-control"
-                placeholder={`Enter ${spec}`}
-              />
-            </div>
-          ))}
+          {["display", "battery", "processor", "camera", "ram", "storage"].map(
+            (spec) => (
+              <div key={spec}>
+                <label htmlFor={`specs.${spec}`} className="form-label">
+                  {spec}:
+                </label>
+                <input
+                  type="text"
+                  name={`specs.${spec}`}
+                  value={values.specs[spec] || ""}
+                  onChange={(e) =>
+                    setValues((prev) => ({
+                      ...prev,
+                      specs: {
+                        ...prev.specs,
+                        [spec]: e.target.value,
+                      },
+                    }))
+                  }
+                  className="form-control"
+                  placeholder={`Enter ${spec}`}
+                />
+              </div>
+            )
+          )}
 
           {/* Submit */}
           <div>

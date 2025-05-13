@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react";
 import { api } from "../../api";
 import { Link } from "react-router-dom";
-
+import LoadingScreen from "../loading/Loading"
 export default function AddToCart() {
   const [cartItems, setCartItems] = useState([]);
+ const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+
 
   useEffect(() => {
     fetchCart();
@@ -31,10 +39,13 @@ export default function AddToCart() {
     (sum, item) => sum + Number(item.price),
     0
   );
+  
+    if (loading) return <LoadingScreen />;
+
 
   return (
-    <div className="container my-4">
-      <div className="d-flex gap-5 justify-content-space-between">
+    <div className="container my-4" style={{marginTop:"100px"}}>
+      <div className="d-flex gap-5 justify-content-space-between"style={{marginTop:"100px"}}>
         <div>
           <h2>🛒 My Cart ({cartItems.length} items)</h2>
         </div>

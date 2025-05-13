@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams ,useNavigate } from "react-router-dom";
 import { api } from "../../api";
+
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ProductList() {
+  const notify = () => toast("user  added!");
+  const navigate = useNavigate();
   const { id } = useParams();
   const [data, setData] = useState(null);
 
@@ -32,11 +35,13 @@ export default function ProductList() {
   }
 
   const handleBuyNow = () => {
-    toast.success("🎉 Order placed successfully!");
+   console.log("navigat");
+
+    navigate("/Buynow")
   };
 
   return (
-    <div className="container my-5 ">
+    <div className="container my-5 "style={{marginTop:"100px"}}>
       <ToastContainer />
       {data ? (
         <motion.div
@@ -105,6 +110,7 @@ export default function ProductList() {
           <h4>Loading product details...</h4>
         </motion.div>
       )}
+      
     </div>
   );
 }

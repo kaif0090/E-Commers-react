@@ -29,7 +29,7 @@ export default function Login() {
       style={{
         height: "100vh",
         position: "absolute",
-        marginTop: "-95px",
+        marginTop: "-200px",
 
         width: "100%",
         padding: "100px",

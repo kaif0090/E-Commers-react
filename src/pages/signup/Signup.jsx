@@ -3,23 +3,35 @@ import { FaAddressBook } from "react-icons/fa";
 import "./signup.css";
 import { api } from "../../api";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoadingScreen from "../loading/Loading"
 export default function Signup() {
+   const [lading, setLading] = useState(true);
   const notify = () => toast("user  added!");
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const { handleChange, handleSubmit, handleReset, values } = useFormik({
     initialValues: {
       name: "",
-      age: "",
+      password: "",
       email: "",
       role:'user'
     },
     onSubmit: submitHandler,
   });
+
+    useEffect(() => {
+      const timeout = setTimeout(() => setLading(false), 2000);
+      return () => clearTimeout(timeout);
+    }, []);
+  
   async function submitHandler(values) {
+
+
+
+
     try {
       setLoading(true);
       const response = await api.post(`/user`, values);
@@ -31,13 +43,14 @@ export default function Signup() {
     }
     handleReset();
   }
+  if (lading) return <LoadingScreen />;
   return (
     <>
       <div
         style={{
           height: "100vh",
           position: "absolute",
-          marginTop: "-95px",
+          marginTop: "-200px",
 
           width: "100%",
         }} className="main"
@@ -77,20 +90,20 @@ export default function Signup() {
             </div>
 
             <div>
-              <label htmlFor="age" className="form-label">
+              <label htmlFor="password" className="form-label">
                 Password:{" "}
               </label>
               <input
                 type="text"
-                name="age"
-                id="age"
-                value={values.age}
+                name="password"
+                id="password"
+                value={values.password}
                 onChange={handleChange}
                 className="form-control"
                 placeholder="Enter password porfile"
               />
             </div>
-            <div>
+            {/* <div>
               <label htmlFor="role" className="form-label">
                 role:{" "}
               </label>
@@ -104,7 +117,7 @@ export default function Signup() {
                 placeholder="Enter role profile"
                 readOnly
               />
-            </div>
+            </div> */}
             <div>
               <button type="submit" className="btn btn-warning " onClick={notify}>
                 {loading ? (

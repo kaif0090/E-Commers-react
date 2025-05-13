@@ -43,7 +43,7 @@ export default function UserData() {
           {loading ? (
             <h2>Loading Data.......</h2>
           ) : (
-            <table className="table text-center" style={{ border: "" }}>
+            <table className="table text-center" style={{ }}>
               <thead>
                 <tr>
                   <th scope="col">SrNo</th>
@@ -60,7 +60,7 @@ export default function UserData() {
                       <td>{index + 1}</td>
                       <td>{element?.name}</td>
                       <td>{element?.email}</td>
-                      <td>{element?.age}</td>
+                      <td>{element?.password}</td>
                       <td>
                         {/* <Link to={element?.id} className="p-2">
                           <IoEyeSharp size={27} />

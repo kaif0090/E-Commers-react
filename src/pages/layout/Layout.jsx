@@ -1,4 +1,4 @@
-import { Outlet, NavLink, useNavigate } from "react-router-dom";
+import { Outlet, NavLink, useNavigate, Link } from "react-router-dom";
 import { FaCartArrowDown } from "react-icons/fa";
 import { IoLogOut } from "react-icons/io5";
 import { useEffect, useState } from "react";
@@ -38,11 +38,20 @@ export default function Layout() {
       item.description.toLowerCase().includes(search.toLowerCase())
   );
 
+  const logout = () => {
+    localStorage.removeItem("currentUser");
+
+    navigate("/Signup");
+  };
+
   return (
     <>
-      <div className="bg-warning">
-        <div className="container ">
-          <nav className="navbar navbar-expand-lg navbar text-light">
+      <div
+        className=""
+        style={{ width: "100%", marginBottom: "100px", top: "-1px" }}
+      >
+        <div className=" ">
+          <nav className="navbar navbar-expand-lg text-light">
             <div className="container-fluid">
               <div className="h1box">
                 <h1
@@ -50,10 +59,9 @@ export default function Layout() {
                   onClick={() => navigate("/")}
                   style={{ cursor: "pointer" }}
                 >
-                   <div class="my_animation">
-      <p className="pr">Bazar </p>
-  </div>
-
+                  <div className="my_animation">
+                    <p className="pr">Bazar </p>
+                  </div>
                 </h1>
               </div>
               <button
@@ -96,10 +104,7 @@ export default function Layout() {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <button
-                      className="btn text-light"
-                      onClick={() => navigate("/Signup")}
-                    >
+                    <button className="btn text-light" onClick={logout}>
                       <IoLogOut size={29} />
                       <p className="addto mx-4">LogOut</p>
                     </button>
@@ -135,6 +140,12 @@ export default function Layout() {
                       <p className="card-text">
                         <strong>Category:</strong> {item.category}
                       </p>
+                      <Link
+                        to={`/product/${item.id}`}
+                        className="btn btn-warning me-2 w-100 mb-2"
+                      >
+                        Buy Now
+                      </Link>
                     </div>
                   </div>
                 </div>
